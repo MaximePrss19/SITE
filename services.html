@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Sites web & visibilité locale (Vaucluse & Drôme Provençale) | VentouxComm</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="description" content="Création de sites web sur mesure pour artisans et commerces du Vaucluse et de la Drôme Provençale. Design premium, SEO local et accompagnement dédié.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#F9F6F0">
+<link rel="canonical" href="https://ventouxcomm.fr/services.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="VentouxComm">
+<meta property="og:title" content="Services — VentouxComm | Création de sites au Crestet">
+<meta property="og:description" content="Sites une page ou vitrine, prix et périmètres expliqués simplement — Crestet et Vaucluse. Réseaux sociaux et stratégie sur demande.">
+<meta property="og:url" content="https://ventouxcomm.fr/services.html">
+<meta property="og:image" content="https://ventouxcomm.fr/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Fraunces:ital,opsz,wght@1,9..144,200;1,9..144,400;1,9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"Services — VentouxComm",
+  "url":"https://ventouxcomm.fr/services.html",
+  "description":"Prestations VentouxComm : création de sites une page ou vitrine, accompagnement réseaux sociaux et stratégie — Crestet et Vaucluse.",
+  "isPartOf":{"@type":"WebSite","name":"VentouxComm","url":"https://ventouxcomm.fr/"}
+}
+</script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{overflow-x:hidden;font-size:16px}
+body{
+  font-family:'Figtree',sans-serif;
+  background:#F9F6F0;
+  color:#111009;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+a{color:inherit;text-decoration:none}
+button{border:none;background:none;cursor:pointer;font-family:inherit}
+::selection{background:#D64B27;color:#F9F6F0}
+
+:root{
+  --w:#F9F6F0;
+  --ink:#111009;
+  --acc:#D64B27;
+  --mid:#847F75;
+  --cream:#EDE7D9;
+  --cream2:#E5DDD0;
+  --dark:#17150F;
+  --e:cubic-bezier(.16,1,.3,1);
+  --ef:cubic-bezier(.22,1,.36,1);
+}
+
+/* GRAIN */
+body::before{
+  content:'';
+  position:fixed;inset:0;z-index:9997;
+  pointer-events:none;
+  opacity:.018;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:200px;
+}
+
+/* SCROLL PROGRESS LINE */
+.prog{
+  position:fixed;top:0;left:0;height:2px;
+  background:var(--acc);z-index:9999;width:0;
+}
+
+/* ══════════════════════════════════════════
+   NAV — Floating, transparent, Apple-style
+══════════════════════════════════════════ */
+.nav{
+  position:fixed !important;top:0;left:0;right:0;z-index:10020;
+  padding:0 52px;height:52px;
+  display:flex;align-items:center;justify-content:space-between;
+  opacity:1 !important;
+  visibility:visible;
+  transform:none !important;
+  transition:background .5s var(--e),backdrop-filter .5s,box-shadow .5s;
+}
+.nav.scrolled{
+  background:rgba(249,246,240,.9);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  box-shadow:0 1px 0 rgba(17,16,9,.06);
+}
+.nav.dark-mode{color:var(--w)}
+.nav.dark-mode.scrolled{
+  background:rgba(23,21,15,.92);
+  box-shadow:0 1px 0 rgba(249,246,240,.06);
+}
+.nav-logo{
+  display:flex;
+  align-items:center;
+  line-height:0;
+}
+.logo-img{
+  height:32px;
+  width:auto;
+  display:block;
+  transform:translateZ(0);
+  backface-visibility:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+.nav .logo-img{height:44px;}
+.logo-img--nav-light{display:none;}
+.nav.dark-mode .logo-img--nav-dark{display:none;}
+.nav.dark-mode .logo-img--nav-light{display:block;}
+.nav-links{display:flex;gap:36px;list-style:none}
+.nav-links a{
+  font-size:.58rem;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;
+  opacity:.45;transition:opacity .3s;
+}
+.nav-links a:hover{opacity:1}
+.nav-cta{
+  font-size:.58rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;
+  padding:8px 22px;
+  border:1px solid currentColor;
+  border-radius:100px;
+  opacity:.7;
+  transition:all .35s var(--e);
+}
+.nav-cta:hover{opacity:1;background:var(--acc);border-color:var(--acc);color:var(--w)}
+.burger{
+  display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;
+  margin:0;background:none;border:none;font:inherit;color:inherit;-webkit-tap-highlight-color:transparent;
+}
+.burger span{display:block;width:20px;height:1px;background:currentColor;transition:all .4s var(--e)}
+.mob-menu{
+  position:fixed;inset:0;z-index:998;
+  background:var(--dark);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
+  opacity:0;pointer-events:none;
+  transition:opacity .5s var(--e);
+}
+.mob-menu.open{opacity:1;pointer-events:all}
+.mob-menu a{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(2rem,8vw,3.5rem);
+  font-weight:800;letter-spacing:-.04em;
+  color:var(--w);
+  opacity:0;transform:translateY(18px);
+  transition:opacity .45s var(--e),transform .5s var(--e),color .3s;
+}
+.mob-menu.open a{opacity:1;transform:translateY(0)}
+.mob-menu a:hover{color:var(--acc)}
+
+/* ══════════════════════════════════════════
+   HERO (titres utilisés par l’intro page services)
+══════════════════════════════════════════ */
+.hero-eyebrow{
+  font-size:.6rem;font-weight:600;
+  letter-spacing:.35em;text-transform:uppercase;
+  color:var(--mid);
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  margin-bottom:28px;
+}
+.hero-eyebrow::before,.hero-eyebrow::after{
+  content:'';width:24px;height:1px;background:rgba(132,127,117,.3);
+}
+.hero-sub{
+  margin-top:24px;
+  font-size:clamp(.85rem,1.45vw,1rem);
+  line-height:1.6;
+  color:var(--mid);
+  max-width:480px;
+  margin-left:auto;margin-right:auto;
+}
+.hero-actions{
+  margin-top:34px;
+  display:flex;align-items:center;gap:20px;
+  flex-wrap:wrap;justify-content:center;
+}
+
+.hero-proof{
+  margin-top:16px;
+  font-size:.58rem;
+  letter-spacing:.08em;
+  color:rgba(132,127,117,.9);
+}
+.btn-ghost{
+  font-family:'Figtree',sans-serif;
+  font-size:.7rem;font-weight:600;
+  letter-spacing:.04em;
+  color:var(--acc);
+  display:flex;align-items:center;gap:8px;
+  transition:gap .3s var(--e);
+}
+.btn-ghost:hover{gap:14px}
+.btn-ghost svg{transition:transform .3s var(--e)}
+.btn-solid{
+  font-family:'Syne',sans-serif;
+  font-size:.62rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;
+  padding:14px 36px;
+  background:var(--ink);
+  color:var(--w);
+  border-radius:100px;
+  transition:all .4s var(--e);
+}
+.btn-solid:hover{background:var(--acc);transform:translateY(-2px);box-shadow:0 14px 36px rgba(214,75,39,.22)}
+@keyframes drip{0%{top:-100%}60%,100%{top:200%}}
+
+/* ══════════════════════════════════════════
+   SERVICES — Apple split + comparison
+══════════════════════════════════════════ */
+.services{background:var(--w)}
+/* Section header */
+.srv-head{
+  padding:88px 80px 72px;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:40px;
+  border-bottom:1px solid rgba(17,16,9,.07);
+}
+.srv-label{
+  font-size:.6rem;font-weight:600;
+  letter-spacing:.3em;text-transform:uppercase;
+  color:var(--mid);display:flex;align-items:center;gap:12px;
+  margin-bottom:18px;
+}
+.srv-label::before{content:'';width:20px;height:1px;background:currentColor}
+.srv-hl{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(2.5rem,5vw,4.8rem);font-weight:800;
+  letter-spacing:-.05em;line-height:.9;
+}
+.srv-hl .em{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:200;
+  letter-spacing:-.01em;color:rgba(17,16,9,.3);
+}
+.srv-head-r p{
+  font-size:.88rem;line-height:1.68;
+  color:var(--mid);max-width:300px;text-align:right;
+}
+/* ── Split screen (pinned) ── */
+.srv-split-outer{position:relative}
+.srv-split-pin{
+  height:100vh;display:grid;grid-template-columns:1fr 1fr;
+  position:relative;overflow:hidden;
+}
+/* Vertical divider */
+.srv-divider{
+  position:absolute;left:50%;top:0;bottom:0;
+  width:2px;transform:translateX(-50%);
+  background:rgba(17,16,9,.05);z-index:10;overflow:hidden;
+}
+.srv-divider-fill{
+  width:100%;height:0%;
+  background:linear-gradient(180deg,var(--acc),rgba(214,75,39,.3));
+}
+/* Halves */
+.srv-half{
+  padding:72px 72px 64px;
+  display:flex;flex-direction:column;
+  justify-content:center;height:100%;
+  position:relative;overflow:hidden;
+}
+.srv-half-l{background:var(--w);color:var(--ink)}
+.srv-half-r{background:var(--dark);color:var(--w)}
+.srv-half-eyebrow{
+  font-size:.55rem;font-weight:600;
+  letter-spacing:.28em;text-transform:uppercase;
+  opacity:.28;margin-bottom:14px;
+}
+/* Situation phrase */
+.srv-sit-phrase{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:200;
+  font-size:clamp(.9rem,1.5vw,1.15rem);line-height:1.5;
+  max-width:380px;margin-bottom:28px;
+  opacity:0;transform:translateY(10px);
+}
+.srv-half-l .srv-sit-phrase{color:var(--mid)}
+.srv-half-r .srv-sit-phrase{color:rgba(249,246,240,.42)}
+/* Offer name */
+.srv-offer-nm{
+  font-family:'Syne',sans-serif;font-weight:800;
+  font-size:clamp(3.2rem,7vw,6.5rem);
+  letter-spacing:-.06em;line-height:.86;margin-bottom:10px;
+}
+.srv-offer-nm .em{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:200;
+  letter-spacing:-.01em;display:block;
+}
+.srv-half-l .srv-offer-nm .em{color:var(--acc)}
+.srv-half-r .srv-offer-nm .em{color:rgba(249,246,240,.28)}
+/* Price */
+.srv-offer-pr{
+  font-family:'Syne',sans-serif;font-weight:800;
+  font-size:clamp(1.3rem,2.2vw,1.9rem);
+  letter-spacing:-.04em;margin-bottom:36px;
+}
+.srv-half-l .srv-offer-pr{color:var(--acc)}
+.srv-half-r .srv-offer-pr{color:rgba(214,75,39,.6)}
+.srv-keyfacts{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:-12px 0 22px;
+  list-style:none;
+}
+.srv-keyfacts li{
+  font-size:.52rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  border-radius:999px;
+  padding:7px 11px;
+}
+.srv-half-l .srv-keyfacts li{
+  border:1px solid rgba(17,16,9,.12);
+  color:rgba(17,16,9,.78);
+}
+.srv-half-r .srv-keyfacts li{
+  border:1px solid rgba(249,246,240,.16);
+  color:rgba(249,246,240,.72);
+}
+.srv-offer-fit{
+  margin:-4px 0 22px;
+  font-size:.78rem;
+  line-height:1.55;
+  max-width:430px;
+}
+.srv-half-l .srv-offer-fit{color:rgba(17,16,9,.58)}
+.srv-half-r .srv-offer-fit{color:rgba(249,246,240,.52)}
+/* Features */
+.srv-feats{
+  list-style:none;display:flex;flex-direction:column;gap:9px;
+  margin-bottom:32px;opacity:0;transform:translateY(14px);
+}
+.srv-feat{
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:.83rem;line-height:1.5;
+  opacity:0;
+}
+.srv-feat-arr{
+  color:var(--acc);font-size:.6rem;
+  margin-top:4px;flex-shrink:0;
+}
+.srv-half-r .srv-feat-arr{color:rgba(214,75,39,.6)}
+.srv-feat-lbl{opacity:.58}
+/* CTA */
+.srv-half-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:'Syne',sans-serif;font-size:.57rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;
+  padding:12px 28px;border-radius:100px;
+  opacity:1;align-self:flex-start;
+  transition:all .4s var(--e);cursor:pointer;
+}
+.srv-half-l .srv-half-btn{background:var(--ink);color:var(--w)}
+.srv-half-l .srv-half-btn:hover{background:var(--acc)}
+.srv-half-r .srv-half-btn{background:var(--w);color:var(--ink)}
+.srv-half-r .srv-half-btn:hover{background:var(--acc);color:var(--w)}
+/* "Le plus complet" badge */
+.srv-pop-badge{
+  position:absolute;top:28px;right:28px;
+  font-family:'Syne',sans-serif;font-size:.44rem;font-weight:800;
+  letter-spacing:.18em;text-transform:uppercase;
+  padding:5px 14px;border-radius:100px;
+  background:var(--acc);color:var(--w);opacity:0;
+}
+/* Scroll hint */
+.srv-scroll-hint{
+  position:absolute;bottom:24px;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:7px;
+  z-index:20;opacity:0;pointer-events:none;
+}
+.srv-scroll-hint span{
+  font-size:.46rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mid);
+}
+/* ── Comparison table (non-pinned, below split) ── */
+.srv-cmp-table{background:var(--w);border-top:1px solid rgba(17,16,9,.07)}
+.srv-cmp-hdr{
+  display:grid;grid-template-columns:260px 1fr 1fr;
+  padding:20px 40px;
+  border-bottom:1.5px solid rgba(17,16,9,.08);
+}
+.srv-cmp-hdr-lbl{
+  font-size:.54rem;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;
+  color:var(--mid);display:flex;align-items:center;
+}
+.srv-cmp-hdr-offer{
+  font-family:'Syne',sans-serif;font-size:.72rem;font-weight:800;
+  letter-spacing:-.01em;color:var(--ink);
+  padding:20px 40px;display:flex;align-items:center;justify-content:flex-start;gap:10px;
+  text-align:left;
+  border-left:none;
+}
+.srv-cmp-hdr-offer .badge{
+  font-size:.4rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:3px 9px;border-radius:100px;
+  background:var(--acc);color:var(--w);
+  font-weight:800;
+}
+.srv-cmp-row{
+  display:grid;grid-template-columns:260px 1fr 1fr;
+  padding:0 40px;
+  border-bottom:1px solid rgba(17,16,9,.05);
+  transition:background .3s;
+}
+.srv-cmp-row:last-child{border-bottom:none}
+.srv-cmp-row:hover{background:var(--cream)}
+.srv-cmp-row.decision{
+  background:rgba(214,75,39,.04);
+}
+.srv-cmp-feat{
+  font-size:.76rem;color:var(--mid);
+  padding:16px 0;display:flex;align-items:center;
+}
+.srv-cmp-val{
+  font-family:'Syne',sans-serif;font-size:.8rem;font-weight:700;
+  color:var(--ink);padding:20px 40px;
+  display:flex;align-items:center;justify-content:flex-start;
+  text-align:left;
+  border-left:none;
+}
+.srv-cmp-val.plus{color:var(--acc)}
+.srv-cmp-val.na{
+  font-family:'Figtree',sans-serif;font-weight:400;
+  font-size:.75rem;opacity:.22;
+}
+.srv-cmp-actions{
+  display:grid;
+  grid-template-columns:260px 1fr 1fr;
+  padding:20px 40px;
+  border-top:1px solid rgba(17,16,9,.06);
+  gap:0;
+}
+.srv-cmp-actions-spacer{min-height:1px}
+.srv-cmp-actions .srv-cmp-cta{justify-self:start}
+.srv-cmp-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  width:max-content;
+  padding:10px 18px;
+  border-radius:999px;
+  font-family:'Syne',sans-serif;
+  font-size:.56rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  transition:all .35s var(--e);
+}
+.srv-cmp-cta.one{
+  background:var(--ink);
+  color:var(--w);
+}
+.srv-cmp-cta.one:hover{background:var(--acc)}
+.srv-cmp-cta.vit{
+  background:var(--w);
+  color:var(--ink);
+  border:1px solid rgba(17,16,9,.14);
+}
+.srv-cmp-cta.vit:hover{
+  background:var(--acc);
+  border-color:var(--acc);
+  color:var(--w);
+}
+/* ── Add-on cards (below comparison table) ── */
+.srv-addons-head{
+  padding:48px 80px 8px;
+  border-top:1.5px solid rgba(17,16,9,.07);
+  background:var(--cream);
+  text-align:center;
+}
+.srv-addons-label{
+  font-size:.54rem;font-weight:600;
+  letter-spacing:.28em;text-transform:uppercase;
+  color:var(--mid);
+  margin-bottom:12px;
+}
+.srv-addons-intro{
+  font-size:.88rem;line-height:1.65;
+  color:rgba(17,16,9,.52);
+  max-width:620px;margin:0 auto;
+}
+.srv-addons{
+  display:grid;grid-template-columns:1fr 1fr;
+  background:var(--cream);
+}
+.srv-addon-card{
+  padding:40px 72px 56px;
+  border-right:1px solid rgba(17,16,9,.07);
+  border-top:1px solid rgba(17,16,9,.06);
+  position:relative;overflow:hidden;
+  transition:background .4s var(--e);
+}
+.srv-addon-card:last-child{border-right:none}
+.srv-addon-card:hover{background:var(--cream2)}
+.srv-addon-card::before{
+  content:'';position:absolute;
+  left:0;top:44px;bottom:44px;
+  width:3px;border-radius:0 2px 2px 0;
+  background:var(--acc);
+  transform:scaleY(0);transform-origin:top;
+  transition:transform .6s var(--e);
+}
+.srv-addon-card:hover::before{transform:scaleY(1)}
+.srv-addon-ew{
+  font-size:.54rem;font-weight:600;
+  letter-spacing:.25em;text-transform:uppercase;
+  color:var(--mid);margin-bottom:14px;
+}
+.srv-addon-name{
+  font-family:'Syne',sans-serif;font-weight:800;
+  font-size:clamp(1.45rem,2.4vw,2.05rem);
+  letter-spacing:-.04em;line-height:.95;margin-bottom:12px;
+}
+.srv-addon-for{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:200;
+  font-size:.82rem;line-height:1.55;
+  color:rgba(17,16,9,.48);
+  max-width:340px;margin:0 0 14px;
+}
+.srv-addon-desc{
+  font-size:.82rem;line-height:1.68;
+  color:var(--mid);max-width:340px;margin-bottom:28px;
+}
+.srv-addon-note{
+  font-size:.72rem;line-height:1.55;
+  color:rgba(132,127,117,.95);
+  max-width:340px;margin:-18px 0 22px;
+  padding-top:14px;
+  border-top:1px solid rgba(17,16,9,.06);
+}
+.srv-addon-price{
+  font-family:'Syne',sans-serif;font-weight:800;
+  font-size:1.65rem;letter-spacing:-.04em;
+  color:var(--ink);margin-bottom:8px;
+}
+.srv-addon-price sub{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:200;
+  font-size:.38em;opacity:.45;vertical-align:baseline;
+}
+.srv-addon-link{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:'Syne',sans-serif;font-size:.57rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--acc);transition:gap .3s var(--e);
+}
+.srv-addon-link:hover{gap:14px}
+/* dummy placeholder — remove old counter styles */
+.srv-counter-dummy{display:none}
+.skip-link{
+  position:fixed;left:0;top:-100px;z-index:10030;
+  padding:12px 18px;background:var(--ink);color:var(--w);
+  font-family:'Syne',sans-serif;font-size:.58rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;border-radius:10px;
+  transform:none;transition:top .28s var(--e);
+}
+.skip-link:focus{
+  top:0;
+  outline:2px solid var(--acc);outline-offset:3px;
+}
+:focus-visible{
+  outline:2px solid var(--acc);
+  outline-offset:3px;
+}
+button:focus:not(:focus-visible),a:focus:not(:focus-visible){outline:none}
+
+/* ══════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════ */
+.footer{
+  background:var(--dark);color:var(--w);
+  padding:72px 80px 40px;
+}
+.footer-top{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:48px;
+  padding-bottom:48px;
+  border-bottom:1px solid rgba(249,246,240,.05);
+  margin-bottom:28px;
+}
+.f-brand{
+  margin-bottom:10px;
+  line-height:0;
+}
+.logo-img--footer{
+  height:40px;
+  width:auto;
+  display:block;
+}
+.f-tag{
+  font-family:'Fraunces',serif;
+  font-style:italic;font-size:.88rem;
+  color:rgba(249,246,240,.25);margin-bottom:12px;
+}
+.f-desc{font-size:.75rem;line-height:1.65;color:rgba(249,246,240,.15);max-width:260px}
+.f-col h5{
+  font-family:'Syne',sans-serif;
+  font-size:.55rem;font-weight:700;
+  letter-spacing:.28em;text-transform:uppercase;
+  color:rgba(249,246,240,.2);
+  margin-bottom:18px;
+}
+.f-col ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.f-col a{font-size:.78rem;color:rgba(249,246,240,.3);transition:color .3s}
+.f-col a:hover{color:var(--acc)}
+.footer-bot{
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:12px;
+}
+.f-copy{font-size:.6rem;color:rgba(249,246,240,.15)}
+.f-copy a{margin-left:10px;color:rgba(249,246,240,.45);transition:color .3s}
+.f-copy a:hover{color:var(--acc)}
+.f-soc{display:flex;gap:20px}
+.f-soc a{font-size:.62rem;letter-spacing:.08em;color:rgba(249,246,240,.25);transition:color .3s}
+.f-soc a:hover{color:var(--acc)}
+
+/* ══════════════════════════════════════════
+   REVEAL UTILITY
+══════════════════════════════════════════ */
+.rv{opacity:0;transform:translateY(24px)}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important;
+  }
+}
+
+/* ══════════════════════════════════════════ PAGE SERVICES ═══════════════════════════════════════════ */
+.nav-links a[aria-current="page"]{opacity:1}
+.page-services-static .svc-jump{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:10px 12px;
+  padding:22px 80px;border-bottom:1px solid rgba(17,16,9,.06);
+  background:var(--w);position:sticky;top:52px;z-index:99;
+}
+.page-services-static .svc-jump a{
+  font-size:.48rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  padding:9px 16px;border-radius:999px;border:1px solid rgba(17,16,9,.12);
+  opacity:.82;transition:opacity .25s,color .25s,border-color .25s;
+}
+.page-services-static .svc-jump a:hover{border-color:var(--acc);color:var(--acc);opacity:1}
+#top,#offre-one-page,#offre-vitrine,#comparatif,#addon-reseaux,#addon-strategie{scroll-margin-top:72px}
+
+/* ── Hero services : centré, léger ── */
+.page-services-static .svc-page-hero--welcome{
+  position:relative;
+  text-align:center;
+  padding:clamp(92px,14vw,128px) 40px 52px;
+  background:
+    radial-gradient(ellipse 80% 65% at 50% 20%,rgba(214,75,39,.1) 0%,transparent 66%),
+    var(--w);
+  border-bottom:1px solid rgba(17,16,9,.07);
+  overflow:hidden;
+}
+.page-services-static .svc-page-hero--welcome::after{
+  content:'';
+  position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 74% 58% at 50% 22%,rgba(214,75,39,.085) 0%,transparent 70%);
+}
+.page-services-static .svc-doc-inner{
+  position:relative;z-index:1;
+  max-width:700px;margin:0 auto;
+}
+.page-services-static .svc-page-hero--welcome .hero-eyebrow{margin-bottom:22px}
+.page-services-static .svc-hero-display{
+  font-family:'Syne',sans-serif;font-weight:800;
+  font-size:clamp(2.2rem,5.2vw,3.45rem);letter-spacing:-.05em;line-height:1.02;
+  margin-bottom:18px;color:rgba(17,16,9,.98);
+  text-shadow:0 8px 28px rgba(17,16,9,.06);
+}
+.page-services-static .svc-hero-display .line-ital{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:200;
+  color:rgba(17,16,9,.5);display:block;margin-top:6px;font-size:.42em;
+  letter-spacing:-.02em;line-height:1.2;
+}
+.page-services-static .svc-page-hero--welcome .svc-lede{
+  font-size:.98rem;line-height:1.62;color:rgba(17,16,9,.7);
+  margin:0 auto 26px;max-width:460px;
+}
+.page-services-static .svc-hero-actions{
+  display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px 20px;
+}
+.page-services-static .svc-hero-actions .btn-ghost svg{flex-shrink:0}
+
+.page-services-static .svc-book{
+  padding:72px 80px 56px;background:var(--w);
+}
+.page-services-static .svc-book-hd{max-width:680px;margin:0 auto 48px;text-align:center}
+.page-services-static .svc-book-hd .srv-label{margin-bottom:14px;justify-content:center}
+.page-services-static .svc-book-hd h2{
+  font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.65rem,3vw,2.35rem);
+  letter-spacing:-.04em;line-height:1.1;margin-bottom:14px;color:var(--ink);
+}
+.page-services-static .svc-book-hd p{font-size:.92rem;line-height:1.65;color:var(--mid);max-width:520px;margin:0 auto}
+
+.page-services-static .svc-offer{
+  border-radius:22px;padding:44px 48px 48px;margin-bottom:28px;
+  position:relative;overflow:hidden;
+  border:1px solid rgba(17,16,9,.08);
+  box-shadow:0 18px 50px rgba(17,16,9,.06);
+}
+.page-services-static .svc-offer--light{background:var(--w)}
+.page-services-static .svc-offer--dark{
+  background:var(--dark);color:var(--w);border-color:rgba(249,246,240,.1);
+  box-shadow:0 24px 56px rgba(17,16,9,.25);
+}
+.page-services-static .svc-offer-tag{
+  display:inline-block;font-size:.46rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+  padding:6px 14px;border-radius:999px;margin-bottom:16px;
+  background:rgba(214,75,39,.12);color:var(--acc);
+}
+.page-services-static .svc-offer--dark .svc-offer-tag{background:rgba(214,75,39,.25);color:rgba(249,246,240,.95)}
+.page-services-static .svc-offer-badge{
+  position:absolute;top:22px;right:22px;
+  font-family:'Syne',sans-serif;font-size:.42rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  padding:5px 12px;border-radius:999px;background:var(--acc);color:var(--w);
+}
+.page-services-static .svc-offer h3{
+  font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.85rem,3.5vw,2.75rem);
+  letter-spacing:-.045em;line-height:1;margin-bottom:8px;
+}
+.page-services-static .svc-offer h3 em{font-family:'Fraunces',serif;font-style:italic;font-weight:200;font-size:.55em;display:block;margin-top:6px;opacity:.85}
+.page-services-static .svc-offer--dark h3 em{color:rgba(249,246,240,.35)}
+.page-services-static .svc-price{
+  font-family:'Syne',sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:-.03em;color:var(--acc);margin-bottom:22px;
+}
+.page-services-static .svc-offer--dark .svc-price{color:rgba(214,75,39,.85)}
+.page-services-static .svc-offer-intro{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:200;font-size:.95rem;line-height:1.55;
+  margin-bottom:20px;max-width:520px;
+}
+.page-services-static .svc-offer--dark .svc-offer-intro{color:rgba(249,246,240,.45)}
+.page-services-static .svc-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;list-style:none}
+.page-services-static .svc-pills li{
+  font-size:.5rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:7px 12px;border-radius:999px;border:1px solid rgba(17,16,9,.12);color:rgba(17,16,9,.75);
+}
+.page-services-static .svc-offer--dark .svc-pills li{border-color:rgba(249,246,240,.2);color:rgba(249,246,240,.75)}
+.page-services-static .svc-offer-copy{font-size:.86rem;line-height:1.68;color:var(--mid);margin-bottom:22px;max-width:560px}
+.page-services-static .svc-offer--dark .svc-offer-copy{color:rgba(249,246,240,.52)}
+.page-services-static .svc-list{margin:0 0 22px;padding:0;list-style:none;display:flex;flex-direction:column;gap:11px}
+.page-services-static .svc-list li{
+  display:flex;gap:12px;align-items:flex-start;font-size:.84rem;line-height:1.55;color:rgba(17,16,9,.62);
+}
+.page-services-static .svc-offer--dark .svc-list li{color:rgba(249,246,240,.58)}
+.page-services-static .svc-list li::before{
+  content:'';flex-shrink:0;width:6px;height:6px;margin-top:7px;border-radius:50%;background:var(--acc);
+}
+.page-services-static .svc-offer-note{
+  font-size:.78rem;line-height:1.6;color:rgba(17,16,9,.48);padding:16px 0 0;margin-bottom:18px;
+  border-top:1px dashed rgba(17,16,9,.12);max-width:540px;
+}
+.page-services-static .svc-offer--dark .svc-offer-note{color:rgba(249,246,240,.42);border-top-color:rgba(249,246,240,.12)}
+.page-services-static .svc-offer-step{
+  font-size:.74rem;line-height:1.55;color:rgba(17,16,9,.42);margin-bottom:22px;max-width:520px;
+}
+.page-services-static .svc-offer--dark .svc-offer-step{color:rgba(249,246,240,.38)}
+.page-services-static .svc-offer-step strong{color:var(--acc);font-weight:600}
+.page-services-static .svc-offer .btn-solid,.page-services-static .svc-offer .btn-solid-alt{
+  display:inline-flex;align-items:center;gap:10px;font-family:'Syne',sans-serif;
+  font-size:.57rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  padding:13px 26px;border-radius:100px;transition:all .35s var(--e);
+}
+.page-services-static .svc-offer--light .btn-solid{background:var(--ink);color:var(--w)}
+.page-services-static .svc-offer--light .btn-solid:hover{background:var(--acc)}
+.page-services-static .svc-offer--dark .btn-solid-alt{
+  background:var(--w);color:var(--ink);
+}
+.page-services-static .svc-offer--dark .btn-solid-alt:hover{background:var(--acc);color:var(--w)}
+
+.page-services-static .svc-chooser{
+  background:var(--cream);padding:64px 80px 72px;margin-top:8px;
+  border-top:1px solid rgba(17,16,9,.06);
+}
+.page-services-static .svc-chooser-in{max-width:920px;margin:0 auto}
+.page-services-static .svc-chooser h2{
+  font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.45rem,2.8vw,2rem);
+  letter-spacing:-.03em;margin-bottom:10px;color:var(--ink);
+}
+.page-services-static .svc-chooser-lead{font-size:.88rem;color:var(--mid);margin-bottom:36px;max-width:520px;line-height:1.6}
+.page-services-static .svc-grid3{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+}
+.page-services-static .svc-qcard{
+  background:var(--w);border-radius:16px;padding:24px 22px 26px;
+  border:1px solid rgba(17,16,9,.07);
+}
+.page-services-static .svc-qcard-num{
+  font-family:'Syne',sans-serif;font-size:.65rem;font-weight:800;color:var(--acc);margin-bottom:12px;letter-spacing:.12em;
+}
+.page-services-static .svc-qcard h3{font-family:'Syne',sans-serif;font-size:.82rem;font-weight:700;margin-bottom:10px;color:var(--ink);letter-spacing:-.02em}
+.page-services-static .svc-qcard p{font-size:.78rem;line-height:1.55;color:var(--mid)}
+.page-services-static .svc-qcard .svc-pick{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--acc);margin-top:14px}
+
+.page-services-static .svc-extras-wrap{
+  padding:56px 80px 80px;background:var(--w);
+}
+.page-services-static .svc-extras-wrap .svc-book-hd{margin-bottom:28px}
+.page-services-static .svc-extra{
+  display:grid;grid-template-columns:auto 1fr;gap:28px 40px;
+  padding:36px 0;border-bottom:1px solid rgba(17,16,9,.08);align-items:start;
+}
+.page-services-static .svc-extra:last-child{border-bottom:none;padding-bottom:0}
+.page-services-static .svc-extra-num{
+  font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:rgba(17,16,9,.1);line-height:1;
+  width:56px;text-align:right;
+}
+.page-services-static .svc-extra h3{
+  font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:800;letter-spacing:-.03em;margin-bottom:8px;color:var(--ink);
+}
+.page-services-static .svc-extra .role{font-family:'Fraunces',serif;font-style:italic;font-weight:200;font-size:.88rem;color:var(--mid);margin-bottom:14px}
+.page-services-static .svc-extra p{font-size:.84rem;line-height:1.68;color:var(--mid);margin-bottom:12px;max-width:560px}
+.page-services-static .svc-extra .note{font-size:.74rem;color:rgba(132,127,117,.95)}
+.page-services-static .svc-extra-price{font-family:'Syne',sans-serif;font-weight:800;font-size:1.2rem;color:var(--ink);margin:14px 0 12px}
+.page-services-static .svc-extra a{
+  display:inline-flex;align-items:center;gap:8px;font-family:'Syne',sans-serif;font-size:.56rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--acc);
+}
+@media(max-width:900px){
+  .page-services-static .svc-grid3{grid-template-columns:1fr}
+  .page-services-static .svc-extra{grid-template-columns:1fr;gap:12px}
+  .page-services-static .svc-extra-num{text-align:left;width:auto;font-size:1.5rem}
+}
+@media(max-width:768px){
+  .page-services-static .svc-page-hero--welcome,.page-services-static .svc-book,.page-services-static .svc-chooser,.page-services-static .svc-extras-wrap{padding-left:24px;padding-right:24px}
+  .page-services-static .svc-offer{padding:32px 22px 36px}
+  .page-services-static .svc-jump{padding:18px 24px;top:0;position:relative}
+}
+@media(max-width:1024px){
+  .stats-row{grid-template-columns:1fr}
+  .stats-row::before,.stats-row::after{display:none}
+  .stat-item{border-bottom:1px solid rgba(249,246,240,.06)}
+  .stat-item:last-child{border-bottom:none}
+  .why-header{grid-template-columns:1fr;gap:24px}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .why-item:nth-child(2n){border-right:none}
+  .about-grid{grid-template-columns:1fr;gap:48px}
+  .zones-inner{grid-template-columns:1fr;gap:36px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:32px}
+  /* Services tablet — pile les 2 offres (One Page + Vitrine) */
+  .srv-split-pin{height:auto;min-height:0;grid-template-columns:1fr}
+  .srv-divider,.srv-scroll-hint{display:none!important}
+  .srv-half{min-height:0;height:auto;padding:52px 48px 48px}
+  .srv-half-r{border-top:1px solid rgba(249,246,240,.12)}
+  .srv-cmp-hdr,.srv-cmp-row{grid-template-columns:160px 1fr 1fr;padding:0 48px}
+  .srv-cmp-actions{grid-template-columns:160px 1fr 1fr;padding:16px 48px 22px}
+  .srv-addons-head{padding:44px 48px 8px}
+  .srv-addons{grid-template-columns:1fr}
+  .srv-addon-card:first-child{border-right:none;border-bottom:1px solid rgba(17,16,9,.07)}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:flex}
+  .hero,.intro-band,.stats,.why,.about,.zones,.cta,.footer,.services{padding-left:24px;padding-right:24px}
+  /* Services mobile — deux offres empilées, pas de colonne droite masquée */
+  .srv-head{flex-direction:column;align-items:flex-start;padding:64px 24px 48px;gap:12px}
+  .srv-head-r p{text-align:left;max-width:100%}
+  .srv-split-outer,.srv-split-pin{min-height:auto}
+  .srv-split-pin{grid-template-columns:1fr;height:auto}
+  .srv-divider,.srv-scroll-hint{display:none!important}
+  .srv-half{padding:40px 0 44px;min-height:0;height:auto;justify-content:flex-start}
+  .srv-half-r{border-top:1px solid rgba(249,246,240,.12)}
+  .srv-cmp-table{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0;padding:0 24px 8px}
+  .srv-cmp-hdr,.srv-cmp-row,.srv-cmp-actions{min-width:520px}
+  .srv-keyfacts{margin:-8px 0 16px}
+  .srv-cmp-hdr,.srv-cmp-row{grid-template-columns:120px 1fr 1fr;padding:0 24px;font-size:.7rem}
+  .srv-cmp-val{padding:14px 16px;font-size:.72rem}
+  .srv-cmp-actions{grid-template-columns:120px 1fr 1fr;padding:14px 24px 20px}
+  .srv-cmp-cta{padding:9px 12px;font-size:.5rem;letter-spacing:.1em}
+  .srv-addons-head{padding:36px 24px 8px}
+  .srv-addons-intro{font-size:.84rem}
+  .srv-addons{grid-template-columns:1fr;padding:0 24px 14px;gap:12px}
+  .srv-addon-card{
+    padding:32px 20px 40px;
+    border:1px solid rgba(17,16,9,.08);
+    border-radius:14px;
+    border-right:1px solid rgba(17,16,9,.08);
+    border-bottom:1px solid rgba(17,16,9,.08);
+  }
+  .srv-addon-card::before{left:10px;top:26px;bottom:26px}
+  .srv-addon-card:last-child{border-bottom:1px solid rgba(17,16,9,.08)}
+  .stats-header{padding:56px 24px 0;flex-direction:column;align-items:flex-start;gap:12px}
+  .stats-sub{text-align:left;max-width:100%}
+  .stat-item{padding:48px 24px 56px}
+  .why-grid{grid-template-columns:1fr}
+  .why-item{
+    border-right:none!important;
+    border-bottom:1px solid rgba(17,16,9,.07);
+  }
+  .why-item:last-child{border-bottom:none}
+  .footer-top{grid-template-columns:1fr}
+  .footer-bot{flex-direction:column;text-align:center}
+  .cta-title{font-size:clamp(3rem,9vw,5rem)}
+  .hero{min-height:78svh;padding-top:76px;padding-bottom:34px}
+  .hero-title{font-size:clamp(2.35rem,8.2vw,4.4rem)}
+  .hero-sub{margin-top:18px}
+  .hero-actions{margin-top:24px}
+}
+@media(max-width:480px){
+  .zones{padding:60px 24px}
+  .hero-actions{flex-direction:column;align-items:center}
+  .zones-cloud{gap:7px}
+  .zt{font-size:.6rem;padding:7px 16px}
+}
+
+</style>
+</head>
+<body class="page-services-static">
+
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<nav class="nav" id="nav" aria-label="Navigation principale">
+  <a href="index.html#top" class="nav-logo" aria-label="VentouxComm — Accueil">
+    <img src="logo-dark.png" alt="" class="logo-img logo-img--nav-dark" width="140" height="32" decoding="async">
+    <img src="logo-light.png" alt="" class="logo-img logo-img--nav-light" width="140" height="32" decoding="async" aria-hidden="true">
+  </a>
+  <ul class="nav-links">
+    <li><a href="services.html" aria-current="page">Services</a></li>
+    <li><a href="index.html#pourquoi">Pourquoi</a></li>
+    <li><a href="index.html#about">À propos</a></li>
+    <li><a href="index.html#zones">Zones</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Contact</a>
+  <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="mobMenu" aria-label="Ouvrir ou fermer le menu">
+    <span aria-hidden="true"></span><span aria-hidden="true"></span>
+  </button>
+</nav>
+
+<nav class="mob-menu" id="mobMenu" aria-label="Menu mobile">
+  <a href="services.html" aria-current="page">Services</a>
+  <a href="index.html#pourquoi">Pourquoi</a>
+  <a href="index.html#about">À propos</a>
+  <a href="index.html#zones">Zones</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main id="main-content" tabindex="-1">
+
+<section class="svc-page-hero svc-page-hero--welcome" id="top">
+  <div class="svc-doc-inner">
+    <p class="hero-eyebrow">Services · Crestet · Vaucluse & Drôme Provençale</p>
+    <h1 class="svc-hero-display">
+      Sites web sur mesure
+      <span class="line-ital">tarifs et détails plus bas</span>
+    </h1>
+    <p class="svc-lede">Vous trouverez les montants à partir de, puis le détail de chaque formule. Une question ? Écrivez-moi.</p>
+    <div class="svc-hero-actions">
+      <a href="contact.html" class="btn-solid">Envoyer un message</a>
+      <a href="#offre-one-page" class="btn-ghost">
+        Voir les formules
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<nav class="svc-jump" aria-label="Aller à la section">
+  <a href="#offre-one-page">Site une page</a>
+  <a href="#offre-vitrine">Site vitrine</a>
+  <a href="#comparatif">Quel site pour vous ?</a>
+  <a href="#addon-reseaux">Réseaux sociaux</a>
+  <a href="#addon-strategie">Stratégie</a>
+</nav>
+
+<section class="svc-book" aria-labelledby="services-heading">
+    <header class="svc-book-hd">
+      <div class="srv-label">Sites internet</div>
+      <h2 id="services-heading">Deux niveaux de site</h2>
+      <p>Les deux incluent un design adapté à votre métier et du référencement local (pour être trouvé dans le secteur). La différence, c’est surtout la taille du site et le temps passé sur les textes.</p>
+    </header>
+
+    <article class="svc-offer svc-offer--light" id="offre-one-page">
+      <span class="svc-offer-tag">Site une page</span>
+      <h3>Une seule page <em>tout en longueur</em></h3>
+      <p class="svc-price">À partir de 500€</p>
+      <p class="svc-offer-intro">Pour être visible rapidement avec une présentation claire : tout tient sur une page que l’on fait défiler.</p>
+      <ul class="svc-pills">
+        <li>~2 semaines</li>
+        <li>SEO local</li>
+        <li>Mobile first</li>
+      </ul>
+      <p class="svc-offer-copy">Parfait pour tester le web, ou pour une activité avec une offre simple à expliquer. Une seule URL à faire connaître ; tout le récit tient dans une page structurée en sections.</p>
+      <ul class="svc-list">
+        <li>Design sur-mesure (pas de thème recyclé)</li>
+        <li>Textes retravaillés avec vous pour Google et vos clients</li>
+        <li>Appels à l’action visibles : formulaire, téléphone, prise de RDV</li>
+        <li>Mise en ligne : pour toute mise à jour, vous pourrez simplement me solliciter</li>
+  
+      </ul>
+      <p class="svc-offer-note">Je m'occupe du nom de domaine et de l’hébergement.</p>
+
+      <p class="svc-offer-step"><strong>Déroulé</strong> — brief court → devis figé → maquette &amp; contenus → recette → mise en ligne.</p>
+      <a href="contact.html?offre=one-page" class="btn-solid">
+        Site une page — me contacter
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </article>
+
+    <article class="svc-offer svc-offer--dark" id="offre-vitrine">
+      <span class="svc-offer-badge">Le plus demandé</span>
+      <span class="svc-offer-tag">Site plusieurs pages</span>
+      <h3>Site vitrine <em>plus détaillé</em></h3>
+      <p class="svc-price">À partir de 800€</p>
+      <p class="svc-offer-intro">Quand une seule page ne suffit plus pour votre crédibilité : plusieurs entrées depuis Google, histoire détaillée, preuves et actualités.</p>
+      <ul class="svc-pills">
+        <li>3 à 5 pages</li>
+        <li>SEO approfondi</li>
+        <li>3–4 sem.</li>
+      </ul>
+      <p class="svc-offer-copy">Pensé pour caves, tables, artisans à plusieurs gammes ou commerces qui veulent porter une image premium. Chaque page a un rôle : convaincre ou orienter vers le contact.</p>
+      <ul class="svc-list">
+        <li>Architecture des contenus + rédaction ou réécriture incluse</li>
+        <li>Galerie, témoignages, blog ou actus si pertinent pour le référencement</li>
+        <li>Parcours utilisateur : aucune impasse, toujours une suite logique</li>
+        <li>Recette SEO avant mise en prod</li>
+      </ul>
+      <p class="svc-offer-note">On peut faire évoluer le site plus tard (nouvelles pages) sans repartir de zéro.</p>
+      <p class="svc-offer-step"><strong>Déroulé</strong> — atelier contenu → arborescence → design système → intégration → SEO → mise en ligne &amp; formation.</p>
+      <a href="contact.html?offre=vitrine" class="btn-solid-alt">
+        Site vitrine — me contacter
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </article>
+  </section>
+
+  <section class="svc-chooser" id="comparatif">
+    <div class="svc-chooser-in">
+      <h2>Quel site correspond à votre situation ?</h2>
+      <p class="svc-chooser-lead">Trois cas très courants. Ce n’est pas un engagement : ça vous aide surtout à formuler votre besoin quand vous m’écrivez.</p>
+      <div class="svc-grid3">
+        <div class="svc-qcard">
+          <div class="svc-qcard-num">01</div>
+          <h3>Budget cadré, besoin immédiat</h3>
+          <p>Vous devez être présent pour la saison ou une ouverture, sans exploser la ligne «&nbsp;communication&nbsp;».</p>
+          <p class="svc-pick">→ Partir sur One Page</p>
+        </div>
+        <div class="svc-qcard">
+          <div class="svc-qcard-num">02</div>
+          <h3>Plusieurs histoires à raconter</h3>
+          <p>Vous vendez plusieurs métiers, lieux ou collections et une page scrollante ferait «&nbsp;bazar&nbsp;».</p>
+          <p class="svc-pick">→ Viser la vitrine</p>
+        </div>
+        <div class="svc-qcard">
+          <div class="svc-qcard-num">03</div>
+          <h3>Vous hésitez encore</h3>
+          <p>Vous voulez éviter de mal investir ou de vous tromper de solution : besoin d’un diagnostic pour ne pas perdre d’argent sur une mauvaise stratégie.</p>
+    
+          <p class="svc-pick">→ Commencer par la stratégie</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="svc-extras-wrap" aria-labelledby="extras-title">
+    <header class="svc-book-hd">
+      <div class="srv-label" id="extras-title">Au-delà du site</div>
+      <h2>Compléments mensuels ou ponctuels</h2>
+      <p>Ce ne sont pas des «&nbsp;options checkout&nbsp;» : soit on les enchaîne après le site, soit ils servent à cadrer le projet avant de coder.</p>
+    </header>
+
+    <article class="svc-extra" id="addon-reseaux">
+      <div class="svc-extra-num">03</div>
+      <div>
+        <h3>Réseaux sociaux — accompagnement</h3>
+        <p class="role">Pour ceux qui créent déjà mais publient au feeling.</p>
+        <p>Calendrier léger, préparation des posts et stories (Instagram, Facebook), ton aligné avec votre terrain. Vous gardez la caméra ; je structure le rythme pour que ça nourrisse votre site plutôt que de le concurrencer.</p>
+        <p class="note">Pas de pubs payantes — uniquement organique et image.</p>
+        <p class="svc-extra-price">300€<span style="font-family:'Fraunces',serif;font-style:italic;font-weight:200;font-size:.55em;opacity:.65">/mois</span></p>
+        <a href="contact.html?offre=reseaux">Parler du pack réseaux <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </article>
+
+    <article class="svc-extra" id="addon-strategie">
+      <div class="svc-extra-num">04</div>
+      <div>
+        <h3>Stratégie &amp; diagnostic digital</h3>
+        <p class="role">Avant d’engager un budget site ou une refonte.</p>
+        <p>Audit rapide de ce qui existe (site, Google Business Profile, réseaux si utile), puis priorités réalistes pour votre secteur dans le Vaucluse et la Drôme Provençale. Vous repartez avec une feuille de route courte — pas un PDF de 40 pages illisible.</p>
+        <p class="note">Souvent utilisé pour trancher One Page vs vitrine, ou préparer une refonte sans doublons.</p>
+        <p class="svc-extra-price">Sur devis</p>
+        <a href="contact.html?offre=strategie">Demander un diagnostic <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </article>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="f-brand">
+        <img src="logo-light.png" alt="VentouxComm" class="logo-img logo-img--footer" width="160" height="40" decoding="async">
+      </div>
+      <div class="f-tag">Votre image locale, amplifiée.</div>
+      <p class="f-desc">Sites sur-mesure et visibilité locale depuis le Crestet — pour artisans, commerces et créateurs du Vaucluse et de la Drôme Provençale.</p>
+    </div>
+    <div class="f-col"><h5>Navigation</h5><ul><li><a href="services.html">Services</a></li><li><a href="index.html#pourquoi">Bénéfices du site</a></li><li><a href="index.html#about">À propos</a></li><li><a href="index.html#zones">Zones</a></li></ul></div>
+    <div class="f-col"><h5>Services</h5><ul><li><a href="services.html#offre-one-page">Site One Page</a></li><li><a href="services.html#offre-vitrine">Site Vitrine</a></li><li><a href="services.html#addon-reseaux">Réseaux Sociaux</a></li><li><a href="services.html#addon-strategie">Audit & Stratégie</a></li></ul></div>
+    <div class="f-col"><h5>Contact</h5><ul><li><a href="mailto:contact@ventouxcomm.fr">contact@ventouxcomm.fr</a></li><li><a href="#">Le Crestet, Vaucluse</a></li><li><a href="#">Provence, France</a></li></ul></div>
+  </div>
+  <div class="footer-bot">
+    <p class="f-copy">&copy; 2026 VentouxComm — Tous droits réservés.<a href="mentions-legales.html">Mentions Légales</a></p>
+    <div class="f-soc"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">LinkedIn</a></div>
+  </div>
+</footer>
+
+
+<script>
+(function(){
+  const prog=document.getElementById('prog');
+  let scrollTicking=false;
+  window.addEventListener('scroll',()=>{
+    if(scrollTicking)return;
+    scrollTicking=true;
+    requestAnimationFrame(()=>{
+      const h=document.documentElement.scrollHeight-window.innerHeight;
+      if(h>0)prog.style.width=(window.scrollY/h*100)+'%';
+      scrollTicking=false;
+    });
+  },{passive:true});
+
+  const navEl=document.getElementById('nav');
+  const darkSections=document.querySelectorAll('.footer,.mob-menu,.svc-offer--dark');
+  function updateNav(){
+    const scrolled=window.scrollY>=0;
+    navEl.classList.toggle('scrolled',scrolled);
+    const nb=navEl.getBoundingClientRect().bottom;
+    let onDark=false;
+    darkSections.forEach(s=>{
+      const r=s.getBoundingClientRect();
+      if(r.top<nb&&r.bottom>0) onDark=true;
+    });
+    navEl.classList.toggle('dark-mode',false);
+  }
+  window.addEventListener('scroll',updateNav,{passive:true});
+  updateNav();
+
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      const href=this.getAttribute('href');
+      if(!href||href.length<2)return;
+      let t=null;
+      try{t=document.querySelector(href)}catch(err){return}
+      if(!t)return;
+      e.preventDefault();
+      window.scrollTo({top:t.offsetTop-52,behavior:'smooth'});
+      if(href==='#main-content'&&typeof t.focus==='function'){
+        requestAnimationFrame(()=>{try{t.focus({preventScroll:true})}catch(err){t.focus()}});
+      }
+    });
+  });
+
+  const burger=document.getElementById('burger'),mob=document.getElementById('mobMenu');
+  let mo=false;
+  burger.addEventListener('click',()=>{
+    mo=!mo;
+    mob.classList.toggle('open',mo);
+    burger.setAttribute('aria-expanded',mo?'true':'false');
+    burger.setAttribute('aria-label',mo?'Fermer le menu':'Ouvrir ou fermer le menu');
+    const sp=burger.querySelectorAll('span');
+    sp[0].style.transform=mo?'rotate(45deg) translate(3px,3px)':'none';
+    sp[1].style.transform=mo?'rotate(-45deg) translate(3px,-3px)':'none';
+    navEl.classList.toggle('dark-mode',mo);
+  });
+  mob.querySelectorAll('a').forEach((a,i)=>{
+    a.style.transitionDelay=(i*.065)+'s';
+    a.addEventListener('click',()=>{
+      mo=false;
+      mob.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+      burger.setAttribute('aria-label','Ouvrir ou fermer le menu');
+      burger.querySelectorAll('span').forEach(s=>s.style.transform='none');
+      updateNav();
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
