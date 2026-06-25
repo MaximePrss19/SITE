@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: MaximePrss19/SITE
+  name: git-gateway
   branch: main
 
 media_folder: "images"
