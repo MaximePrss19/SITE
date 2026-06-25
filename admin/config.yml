@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: MaximePrss19/SITE
   branch: main
 
 media_folder: "images"
@@ -7,7 +8,7 @@ public_folder: "/images"
 
 collections:
   - name: "pages"
-    label: "Pages du site"
+    label: "Pages"
     files:
       - label: "Page d'accueil"
         name: "index"
