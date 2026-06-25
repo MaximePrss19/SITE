@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: MaximePrss19/SITE
+  name: git-gateway
   branch: main
-  base_url: https://api.github.com
-  auth_endpoint: oauth
 
 media_folder: "images"
 public_folder: "/images"
